@@ -1,4 +1,4 @@
-# finassociations
+# Finassociations
 Finassociations: Investment Recommendation Application with Association Rule Mining
 
 Finassociations is a flexible and interactive investment recommendation application that enables app users to discover financial relations between currencies, cryptocurrencies, and stocks through Association Rule Mining (ARM). ARM is a technique generally used for market basket analysis; also, it has a variety of applications in other areas since it facilitates the discovery of associations in transactions. Finassociations Application has two main parts: Data Selection and Association Rule Mining. 
