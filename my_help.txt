@@ -1,0 +1,26 @@
+Association Rules Mining (ARM) is frequently used for market basket analysis; nonetheless, it has a variety of applications in other industries since it facilitates the discovery of associations in transactions. Finassociations is a flexible and interactive investing recommendation web application that enables investors to reveal financial relationships between financial instruments, currencies, cryptocurrencies, and stocks using the ARM approach. Finassociations is developed in the scope of scientific research, so information obtained on Finassociations should be used for information and research purposes only. It is not intended to provide investment or financial, or other professional financial advice.
+
+Finassociations Application has two main parts: Data Selection and Association Rule Mining. You can proceed from the first section to the second with the "Next" button. Also, please do not forget to click the 'Get Rules' button to display the financial associations (association rules).
+
+The rules alike to A -> B are created at the end of the ARM analyses. Items in A and B are called as antecedent (LHS) and consequent (RHS), respectively.
+
+Currency, cryptocurrency, and stock data based on a certain period range (last 1 week, last 1/3/6 months, or last 1/2 years) is obtained from Yahoo Finance.
+
+The Percentage Rate of Change (ROC): The financial data of an asset is compared to the previous day, and the ROC in percentage is determined appropriately.
+
+The Lower and The Upper Bounds: If the percentage ROC is in the interval [lower bound, upper bound], it indicates NO CHANGE (NOCH). ROC (%) less than the lower bound and higher than the upper bound denote decrease (DEC) and increase (INC), respectively.
+
+Minimum Support & Minimum Confidence: The values of support, confidence, and lift ratio are crucial in the evaluation of association rules. The support is the number of transactions that include all items in the antecedent and consequent parts of the rule (Talia et al., 2016). The confidence is the ratio of the number of transactions that include all items in the consequent as well as the antecedent (the support) to the number of transactions that include all items in the antecedent. The support value is related to the statistical significance of the rule, while confidence is a criterion used to determine the strength of the rule. Both values range from 0-1. Support and confidence values are expected to be close to 1.
+
+A rule A -> B, with 50% support and 95% confidence, for example, indicates that at least 95% of A's found in the given data set are also B's, and that A's and B's co-occur in the data set at least 50% of the time (Teng, 2011). 
+
+Lift Ratio: The quality of a rule is measured by its lift ratio. It is also used to measure the (symmetric) correlation between antecedent and consequent of the extracted rules (Capozzoli et al., 2016). It can have values ranging from zero to infinity. However, the lift ratio is supposed to be greater than 1. Rules having a lift ratio higher than 1 are listed in the order of lift ratio, confidence, and support by default.
+
+The Minimum Rule Length: This parameter determines the minimum length of a rule (LHS + RHS).
+
+References:
+Capozzoli, A., Cerquitelli, T., & Piscitelli, M. S. (2016). Chapter 11—Enhancing energy efficiency in buildings through innovative data analytics technologiesa. In C. Dobre & F. Xhafa (Eds.), Pervasive Computing (pp. 353–389). Academic Press. https://doi.org/10.1016/B978-0-12-803663-1.00011-5
+Talia, D., Trunfio, P., & Marozzo, F. (2016). Chapter 1—Introduction to Data Mining. In D. Talia, P. Trunfio, & F. Marozzo (Eds.), Data Analysis in the Cloud (pp. 1–25). Elsevier. https://doi.org/10.1016/B978-0-12-802881-0.00001-9
+Teng, C. M. (2011). Data, Data, Everywhere: Statistical Issues in Data Mining. In P. S. Bandyopadhyay & M. R. Forster (Eds.), Philosophy of Statistics (Vol. 7, pp. 1099–1117). North-Holland. https://doi.org/10.1016/B978-0-444-51862-0.50034-4
+
+
